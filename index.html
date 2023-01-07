@@ -50,6 +50,77 @@
         </form>
         <p class="register"> Não tem uma conta? <br><a href="#"> Criar conta </a></p>
       </div>
+
+      <div class="dialog">
+        <div class="area-register">
+          <img class="b-area-login" src="Brand/dev-icone.png" alt="">
+        <h2>Cadastrar-se</h2>
+        <form action="" method="post" class="form-register">
+          <div class="full-name">
+            <label for="nome-register"></label>
+            <input
+              type         = "nome"
+              name         = "nome-register"
+              id           = "nome-register"
+              placeholder  = "Nome"
+              autocomplete = "name"
+              autofocus >
+            <label for="sobrenome-register"></label>
+            <input
+              type         = "text"
+              name         = "sobrenome-register"
+              placeholder  = "Sobrenome"
+              autocomplete = "family-name">
+          </div>
+          <div>
+            <label for="nascimento">Nascimento: </label><br>
+            <input
+              type         = "date"
+              name         = "nascimento"
+              autocomplete = "bday-day" >
+              <label for="nascimento">idade</label><br>
+            <input
+              width="90px"
+              type         = "text"
+              name         = "nascimento"
+              autocomplete = "bday-day" >
+
+            <div>
+              <label for="sexo">Sexo: </label><br>
+              <input
+                type   = "radio"
+                name   = "masculino"
+                id     = "masculino">
+              <label for="feminino">Masculino</label>          <input
+                type   = "radio"
+                name   = "feminino"
+                id     = "feminino">
+              <label for="feminino">Feminino</label>
+              <input
+                type   = "radio"
+                name   = "nbinario"
+                id     = "nbinario">
+              <label for="nbinario">Outro</label>
+            </div>
+          </div>
+          <label for="email">E-mail: </label>
+          <input
+            type         = "email"
+            name         = "email"
+            placeholder  = "minha_conta@exemplo.com"
+            autocomplete = "email"
+            autofocus >
+          <label for="password"> Senha: </label>
+          <input
+            type         = "password"
+            name         = "password"
+            id           = "password"
+            placeholder  = "senha"
+            autocomplete = "password">
+          <button type="submit" class="btn submit"> Entrar </button>
+        </form>
+        <p class="register"> Não tem uma conta? <br><a href="#"> Criar conta </a></p>
+      </div>
   </section>
   <script src="js/script.js"></script>
 </body>
