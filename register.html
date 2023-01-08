@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev | Cadastrar</title>
+  <link rel="shortcut icon" href="Brand/dev-icone.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <main class="full-dialog">
+    <div class="dialog">
+      <div class="area-register">
+        <img class="b-area-login" src="Brand/dev-icone.png" alt="">
+        <h2>Cadastrar-se</h2>
+        <form action="" method="post" class="form-register">
+          <div class="full-name">
+            <label for="nome-register"></label>
+            <input
+              class        = "input"
+              type         = "text"
+              name         = "nome-register"
+              id           = "nome-register"
+              placeholder  = "Nome"
+              autocomplete = "name"
+              autofocus >
+            <label for="sobrenome-register"></label>
+            <input
+              class        = "input"
+              type         = "text"
+              name         = "sobrenome-register"
+              id           = "sobrenome-register"
+              placeholder  = "Sobrenome"
+              autocomplete = "family-name">
+          </div>
+          <div class="b-day">
+            <label class="input" for="nascimento">Nascimento: </label>
+            <input
+              class        = "input"
+              type         = "date"
+              name         = "nascimento"
+              id           = "nascimento">
+          </div>
+          <div class="sexo">
+            <label  class="input" for="sexo">Sexo: </label>
+          </div>
+          <div class="sexo-radio">
+            <input
+              type         = "radio"
+              name         = "sexo"
+              id           = "masculino">
+            <label for="masculino">Masculino</label>
+            <input
+              type         = "radio"
+              name         = "sexo"
+              id           = "feminino">
+            <label for="feminino">Feminino</label>
+            <input
+              type         = "radio"
+              name         = "sexo"
+              id           = "outro">
+            <label for="outro">Outro</label>
+          </div>
+          <div class="email">
+            <label class="input" for="email">E-mail: </label>
+            <input
+              class        = "input"
+              type         = "email"
+              name         = "email"
+              placeholder  = "minha_conta@exemplo.com"
+              autocomplete = "email">
+            </div>
+            <div class="create-password">
+            <label class="input" for="password">Criar senha: </label>
+            <input
+              class="input"
+              type         = "password"
+              name         = "password"
+              id           = "create-password"
+              placeholder  = "senha">
+          </div>
+          <div class="create-password">
+            <label class="input" for="password">Repetir senha: </label>
+            <input
+              class="input"
+              type         = "password"
+              name         = "password"
+              id           = "repeat-password"
+              placeholder  = "senha">
+          </div>
+          <button type="submit" class="btn submit-register" >Cadastrar</button>
+          <p class="register">Já tenho uma conta<br><a href="index.html">Entrar</a></p>
+        </form>
+      </div>
+  </main>
+</body>
+</html>
