@@ -11,7 +11,8 @@
 :root{
   --primaria: #0741AD;
   --secundária: #3690D4;
-  --terciaria: #368fd446;
+  --terciaria: #B4C6E6;
+  --fraca: #368fd446;
   --sombra: #0000002c;
 }
 
@@ -51,8 +52,7 @@
 }
 
 .nav-item:hover{
-  background-color: var(--secundária);
-  color: #fff;
+  background-color: var(--fraca);
 }
 
 .login{
@@ -68,6 +68,7 @@
 .showcase{
   display: flex;
   justify-content: space-evenly;
+  padding: 3em;
 }
 
 .mockup{
@@ -94,7 +95,7 @@
 }
 
 .area-login{
-  background-color: var(--terciaria);
+  background-color: var(--fraca);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -116,10 +117,19 @@
 }
 
 input{
-  margin: .2em 0 1em;
+  width: 6em;
+}
+
+.input, .input-login{
+  width: 100%;
+  margin: 0 .5em;
   padding: .4em .3em;
   border-bottom: var(--secundária) solid;
   border-radius: 7px;
+}
+
+.input-login{
+  margin: .5em 0;
 }
 
 input:focus{
@@ -127,8 +137,9 @@ input:focus{
   border-bottom: var(--primaria) solid;
 }
 
-.submit{
+.submit, .submit-register{
   background-color: var(--secundária);
+  color: #fff;
   padding: .5em;
   border-radius: 30px;
   box-shadow: 1px 1px 3px var(--sombra);
@@ -141,25 +152,34 @@ input:focus{
 }
 
 .register{
+  font-size: .8em;
   text-align: center;
 }
 
-.dialog{
-  background-color: blanchedalmond;
-  position: absolute;
-  width: 100%;
+/* AREA DE CADASTRO */
+.full-dialog{
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.dialog{
+  background-color: var();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  border-radius: 20px;
+}
+
 .area-register{
-  background-color: var(--terciaria);
+  background-color: var(--fraca);
+  box-shadow: 1px 1px 3px var(--sombra);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1em;
   border-radius: 15px;
 }
 
@@ -168,4 +188,27 @@ input:focus{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1em;
+}
+
+.full-name, .b-day, .sexo, .email, .create-password{
+  padding: .5em 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sexo{
+  text-align: center;
+}
+.sexo-radio{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-register{
+  color: #fff;
+  margin: .5em;
+  width: 97%;
 }
