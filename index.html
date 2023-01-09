@@ -7,7 +7,7 @@
   <title>DEV | Fora da caixa</title>
   <link rel="shortcut icon" href="Brand/dev-icone.png" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
+  <script src="js/script.js" defer></script>
 </head>
 <body>
   <header>
@@ -19,7 +19,19 @@
         <a href="#" class="nav-item">Cursos</a>
         <a href="#" class="nav-item">Serviços</a>
         <a href="#" class="nav-item">Contatos</a>
-        <button id="login" class="btn login"> Entrar </button>
+      </nav>
+      <button id="login" class="btn login"> Entrar </button>
+      <div class="full-sandwich">
+        <div class="sandwich s1"></div>
+        <div class="sandwich s2"></div>
+        <div class="sandwich s3"></div>
+      </div>
+      <nav class="nav-mobile">
+        <a href="#" class="nav-item-mobile">Início</a>
+        <a href="#" class="nav-item-mobile">Sobre</a>
+        <a href="#" class="nav-item-mobile">Cursos</a>
+        <a href="#" class="nav-item-mobile">Serviços</a>
+        <a href="#" class="nav-item-mobile">Contatos</a>
       </nav>
     </section>
   </header>
@@ -39,7 +51,7 @@
               class          = "input-login"
               type           = "email"
               name           = "email"
-              id             = "email"
+              id             = "email-login"
               placeholder    = "minha_conta@exemplo.com"
               autocomplete   = "email"
               autofocus>
@@ -48,7 +60,7 @@
               class          = "input-login"
               type           = "password"
               name           = "password"
-              id             = "password"
+              id             = "password-login"
               placeholder    = "senha"
               autocomplete   = "password">
           <button type="submit" class="btn submit"> Entrar </button>
