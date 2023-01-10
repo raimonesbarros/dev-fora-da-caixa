@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEV | Fora da caixa</title>
+  <link rel="shortcut icon" href="Brand/dev-icone.png" type="image/x-icon">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/script.js" defer></script>
+  <script type="module" src="/js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <section class="container header">
+      <img id="logo" class="" src="/Brand/dev-full-right-120.png" alt="logo dev fora da caixa">
+      <nav class="nav">
+        <a href="#" class="nav-item">Início</a>
+        <a href="#" class="nav-item">Sobre</a>
+        <a href="#" class="nav-item">Cursos</a>
+        <a href="#" class="nav-item">Serviços</a>
+        <a href="#" class="nav-item">Contatos</a>
+      </nav>
+      <button id="login" class="btn login"> Entrar </button>
+      <div class="full-sandwich">
+        <div class="sandwich s1"></div>
+        <div class="sandwich s2"></div>
+        <div class="sandwich s3"></div>
+      </div>
+      <nav class="nav-mobile">
+        <a href="#" class="nav-item-mobile">Início</a>
+        <a href="#" class="nav-item-mobile">Sobre</a>
+        <a href="#" class="nav-item-mobile">Cursos</a>
+        <a href="#" class="nav-item-mobile">Serviços</a>
+        <a href="#" class="nav-item-mobile">Contatos</a>
+      </nav>
+    </section>
+  </header>
+  <section class="container">
+    <div class="showcase">
+      <div class="mockup">
+        <img class="mockups" src="/Brand/dev-brand.png" alt="mockups dev fora da caixa">
+        <a class="txt-mockup" href="register.html">
+          <h4>Faça parte deste time!</h4>
+        </a>
+      </div>
+      <div class="area-login">
+        <img class="b-area-login" src="/Brand/dev-icone.png" alt="">
+        <form action="" method="post" class="form">
+          <label for="email">Usuário: </label>
+            <input
+              class          = "input-login"
+              type           = "email"
+              name           = "email"
+              id             = "email-login"
+              placeholder    = "minha_conta@exemplo.com"
+              autocomplete   = "email"
+              autofocus>
+          <label for="password"> Senha: </label>
+            <input
+              class          = "input-login"
+              type           = "password"
+              name           = "password"
+              id             = "password-login"
+              placeholder    = "senha"
+              autocomplete   = "password">
+              <p class="fail">Esqueci a senha!</p>
+          <button type="submit" class="btn submit"> Entrar </button>
+        </form>
+        <p class="register"> Não tem uma conta? <br><a href="register.html"> Criar conta </a></p>
+      </div>
+  </section>
+</body>
+</html>
