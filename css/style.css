@@ -212,6 +212,10 @@ input:focus{
   margin-bottom   : 1em;
 }
 
+.vazio{
+  border-bottom: red solid;
+}
+
 .submit, .submit-register{
   background-color: var(--secundária);
   color           : #fff;
