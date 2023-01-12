@@ -205,6 +205,10 @@ input:focus{
   border-bottom   : var(--primaria) solid;
 }
 
+.disable{
+  display: none;
+}
+
 .fail{
   display         : none;
   color           : red;
