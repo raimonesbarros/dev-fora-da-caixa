@@ -1,4 +1,5 @@
 import { Usuario } from "../model/Usuario.js";
+import { ListaUsuarios } from "../model/ListaUsuarios.js";
 
 export class UsuarioController{
   _inputNome
@@ -12,14 +13,19 @@ export class UsuarioController{
      this._inputNome       = document.querySelector("#nome-register");
      this._inputSobrenome  = document.querySelector("#sobrenome-register");
      this._inputNascimento = document.querySelector("#nascimento");
-     this._inputSexo       = document.querySelectorAll("[type=radio]");
+     this._inputSexo       = document.querySelector("[type=radio]");
      this._inputEmail      = document.querySelector("#email-register");
      this._inputSenha      = document.querySelector("#password-register");
+
+     this._listaUsuarios    = new ListaUsuarios()
   }
   
   adicionar(evt) {
-    this._novoUsuario()
-    console.log(this._novoUsuario())
+    //this._novoUsuario()
+    //console.log(this._novoUsuario())
+
+    this._listaUsuarios.adicionar(this._novoUsuario())
+    console.log(this._listaUsuarios.usuarios)
   }
   
   _novoUsuario() {

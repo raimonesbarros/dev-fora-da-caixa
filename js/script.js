@@ -14,3 +14,14 @@ sandwich.addEventListener("click",()=>{
     navMob.classList.toggle("enter-nav");
 })
 //fim menu sandwich
+
+// Área de login
+const email_login    = document.querySelector("#email-login")
+const password_login = document.querySelector("#password-login")
+const submit_login   = document.querySelector("#submit-login")
+
+// Efetuar login
+submit_login.addEventListener("click", evt=>{
+    evt.preventDefault()
+    console.log("clicou")
+})
