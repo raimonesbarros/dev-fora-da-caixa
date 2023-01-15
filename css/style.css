@@ -260,11 +260,33 @@ input:focus{
 .area-register{
   background-color: var(--fraca);
   box-shadow      : 1px 1px 3px var(--sombra);
+  position: relative;
   display         : flex;
   flex-direction  : column;
   justify-content : center;
   align-items     : center;
   border-radius   : 15px;
+}
+
+.messenger{
+  position: absolute;
+  top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 2.5em;
+  border-radius: .5em;
+  font-size: 1.1em;
+  color: #fff;
+}
+
+.alert{
+  background-color: #f04040;
+}
+
+.sucess{
+  background-color: #008000d7;
 }
 
 .form-register{
