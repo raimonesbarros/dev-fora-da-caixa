@@ -77,10 +77,10 @@ Envio de dados devidamente preenchidos;
 
 ----
 
-## ⬆️ Melhorias futuras
+## ⬆️ Atualizações
 
-- Validar data do formulário para uma idade específica;
-- Adicionar caixas de diálogo para melhorar a compreensão das expressões de erro;
+- ✅ Validar data do formulário para uma idade específica;
+- ✅ Adicionar caixas de diálogo para melhorar a compreensão das expressões de erro;
 - Guardar dados do formulário localStorage ou em banco de dados;
 - Usar dados do formulário para login;
 - Criar aba de exibição de dados;
