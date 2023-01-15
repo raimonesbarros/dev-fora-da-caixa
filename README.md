@@ -1,11 +1,12 @@
-<h1 style="display:flex;"><span style="padding: 0 10px"><img src="img/Brand/dev-icone.png" width="40"></span>&lt;/dev&gt; fora da caixa</h1>
+<h1><span><img src="img/Brand/dev-icone.png" width="40"></span>&lt;/dev&gt; fora da caixa</h1>
+
  
-### Projeto de site dinamico, para fins de pratica de conhecimentos e aperfeicoamento de técnicas.
+### Projeto de site dinâmico, para fins de prática de conhecimentos e aperfeiçoamento de técnicas.
 
 ----
 
 ## 🛠️ Recursos:
-- ### Pagina inicial
+- ### Página inicial
 ![](img/show/pg-inicial.jpg)
 
 Dinâmica de login de usuário;
@@ -23,7 +24,7 @@ Botão chamariz para área de cadastro.
 - ### Formulário de cadastro
 ![](img/show/pg-form.jpg)
 
-Dinâmica de cadastar novo usuário;
+Dinâmica de cadastrar novo usuário;
 
 Input de informações pessoais e de futuro login;
 
@@ -37,7 +38,7 @@ Link para página de login;
 
 Expressão de erro nos campos NÃO preenchidos devidamente ao tentar enviar as informações;
 
-Inclusive semelhança das senhas inseridas e padrão (oito caracteres).
+Inclusive semelhança das senhas inseridas e padrão oito caracteres.
 
 ![](img/show/envio.jpg)
 
@@ -46,7 +47,7 @@ Envio de dados devidamente preenchidos;
 ----
 
 ## ✒️ Design
-- ### Simples, minimalista, monocromático, bordas arredendadas e tema light.
+- ### Simples, minimalista, monocromático, bordas arredendadas modelo pílula e tema light.
 
 ----
 
@@ -70,26 +71,21 @@ Envio de dados devidamente preenchidos;
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-### Foco de estudo: Javascript Orientado a Objetos. <br> Criação, manipulação, instanciação e visalização de objetos.
+### Foco de estudo: Javascript Orientado a Objetos. <br> Criação, manipulação, instanciação e visualização de objetos.
 
 </div>
 
 ----
 
-## ⬆️ Melhorias futuras
+## ⬆️ Atualizações
 
-- Validar data do formulario para uma idade específica;
-- Adicionar caixas de dialogo para melhorar a compreensão das expressões de erro;
-- Guardar dados do formulário em banco;
-- Usar dados do formulario para login;
+- ✅ Validar data do formulário para uma idade específica;
+- ✅ Adicionar caixas de diálogo para melhorar a compreensão das expressões de erro;
+- Guardar dados do formulário localStorage ou em banco de dados;
+- Usar dados do formulário para login;
 - Criar aba de exibição de dados;
 - Exibir dados após o login;
 
 ----
-
-<div align="center">
-
-## ➡️ [Ir para o site]() ⬅️
-</div>
 
 ----
