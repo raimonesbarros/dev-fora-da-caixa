@@ -17,15 +17,15 @@ export class UsuarioController{
      this._inputEmail      = document.querySelector("#email-register");
      this._inputSenha      = document.querySelector("#password-register");
 
-     this._listaUsuarios    = new ListaUsuarios()
+     this._listaUsuarios    = new ListaUsuarios();
   }
   
   adicionar(evt) {
-    //this._novoUsuario()
-    //console.log(this._novoUsuario())
+  
+    let _usuarioJSON = JSON.stringify(this._novoUsuario())
+    localStorage.setItem(this._inputEmail.value, _usuarioJSON)
 
     this._listaUsuarios.adicionar(this._novoUsuario())
-    console.log(this._listaUsuarios.usuarios)
   }
   
   _novoUsuario() {

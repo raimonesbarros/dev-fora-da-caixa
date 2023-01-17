@@ -1,10 +1,12 @@
 import { UsuarioController } from '../js/poo/controller/UsuarioController.js'
+import { Consulta } from './poo/model/Consulta.js'
 
 // Formulário de Cadastro
 const inputs       = [...document.querySelectorAll("input:not([type=radio])")]
 const nascimmento  = document.querySelector("input[type=date]")
 const sexo         = [...document.querySelectorAll("[type=radio]")]
 const labelsexo    = document.querySelector(".labelsexo")
+const email        = document.querySelector('#email-register')
 const senha        = document.querySelector("#password-register")
 const repetirSenha = document.querySelector("#repeat-password")
 const messenger    = document.querySelector(".messenger")
@@ -72,6 +74,7 @@ function limpar(){
     })
 }
 
+
 // Instanciar novo usuario
 let usuarioController = new UsuarioController();
 
@@ -82,6 +85,14 @@ let formulario = document.querySelector("form")
 formulario.addEventListener("submit", (evt)=>{
     evt.preventDefault()
     verify()
+
+    let consulta = new Consulta('#email-register')
+
+    if( consulta.emailLocal == 'sim') {
+        erro(email)
+        msgAlert("Usuário possui cadastro!", "alert")
+    }
+
     // controlar o envio do formulario
     if(verify1==true){
         usuarioController.adicionar(evt);
@@ -107,5 +118,5 @@ function msgAlert(msg, tipo){
     setTimeout(el=>{
         messenger.textContent=''
         messenger.classList.remove(tipo)
-    }, 3000)
+    }, 2000)
 }

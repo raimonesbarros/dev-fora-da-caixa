@@ -1,3 +1,5 @@
+import { Consulta } from "./poo/model/Consulta.js";
+
 // Menu Sandwich
 const sandwich = document.querySelector(".full-sandwich");
 const s1       = document.querySelector(".s1");
@@ -16,12 +18,29 @@ sandwich.addEventListener("click",()=>{
 //fim menu sandwich
 
 // Área de login
-const email_login    = document.querySelector("#email-login")
-const password_login = document.querySelector("#password-login")
 const submit_login   = document.querySelector("#submit-login")
 
 // Efetuar login
 submit_login.addEventListener("click", evt=>{
     evt.preventDefault()
-    console.log("clicou")
+    let consulta = new Consulta('#email-login')
+    const password_login = document.querySelector("#password-login").value
+    
+    if(consulta.emailLocal === 'sim' && password_login === consulta.senha) {
+        
+        console.log("tem cadastro")
+        console.log(consulta.senha)
+        console.log(password_login)
+
+
+        if(password_login === consulta.senha){
+            console.log("senha confere")
+        } else {
+            console.log("Senha errada")
+        }
+
+    } else {
+        console.log("nao tem cadastro")
+    }
+
 })
