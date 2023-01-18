@@ -8,67 +8,139 @@
   <link rel="shortcut icon" href="/img/Brand/dev-icone.png" type="image/x-icon">
   <link rel="stylesheet" href="/css/style.css">
   <script type="module" src="/js/script.js" defer></script>
+  <script type="module" src="/js/sandwich.js" defer></script>
 </head>
 <body>
-  <header>
-    <section class="container header">
-      <img id="logo" class="" src="/img/Brand/dev-full-right-120.png" alt="logo dev fora da caixa">
-      <nav class="nav">
-        <a href="#" class="nav-item">Início</a>
-        <a href="#" class="nav-item">Sobre</a>
-        <a href="#" class="nav-item">Cursos</a>
-        <a href="#" class="nav-item">Serviços</a>
-        <a href="#" class="nav-item">Contatos</a>
-      </nav>
-      <button id="login" class="btn login"> Entrar </button>
-      <div class="full-sandwich">
-        <div class="sandwich s1"></div>
-        <div class="sandwich s2"></div>
-        <div class="sandwich s3"></div>
-      </div>
-      <nav class="nav-mobile">
-        <a href="#" class="nav-item-mobile">Início</a>
-        <a href="#" class="nav-item-mobile">Sobre</a>
-        <a href="#" class="nav-item-mobile">Cursos</a>
-        <a href="#" class="nav-item-mobile">Serviços</a>
-        <a href="#" class="nav-item-mobile">Contatos</a>
-      </nav>
+  <login class="">
+    <header>
+      <section class="container header">
+        <img id="logo" class="" src="/img/Brand/dev-full-right-120.png" alt="logo dev fora da caixa">
+        <nav class="nav">
+          <a href="#" class="nav-item">Início</a>
+          <a href="#" class="nav-item">Sobre</a>
+          <a href="#" class="nav-item">Cursos</a>
+          <a href="#" class="nav-item">Serviços</a>
+          <a href="#" class="nav-item">Contatos</a>
+        </nav>
+        <button id="login" class="btn login"> Entrar </button>
+        <div class="full-sandwich">
+          <div class="sandwich s1"></div>
+          <div class="sandwich s2"></div>
+          <div class="sandwich s3"></div>
+        </div>
+        <nav class="nav-mobile">
+          <a href="#" class="nav-item-mobile">Início</a>
+          <a href="#" class="nav-item-mobile">Sobre</a>
+          <a href="#" class="nav-item-mobile">Cursos</a>
+          <a href="#" class="nav-item-mobile">Serviços</a>
+          <a href="#" class="nav-item-mobile">Contatos</a>
+        </nav>
+      </section>
+    </header>
+    <section class="container">
+      <div class="showcase">
+        <div class="mockup">
+          <img class="mockups" src="/img/Brand/dev-brand.png" alt="mockups dev fora da caixa">
+          <a class="txt-mockup" href="register.html">
+            <h4>Faça parte deste time!</h4>
+          </a>
+        </div>
+        <div class="area-login">
+          <img class="b-area-login" src="/img/Brand/dev-icone.png" alt="">
+          <p class="messenger msg-login"></p>
+          <form action="" method="post" class="form">
+            <label for="email">Usuário: </label>
+              <input
+                class          = "input-login"
+                type           = "email"
+                name           = "email"
+                id             = "email-login"
+                placeholder    = "minha_conta@exemplo.com"
+                autocomplete   = "email"
+                autofocus>
+            <label for="password"> Senha: </label>
+              <input
+                class          = "input-login"
+                type           = "password"
+                name           = "password"
+                id             = "password-login"
+                placeholder    = "senha"
+                autocomplete   = "password">
+                <p class="fail">Esqueci a senha!</p>
+            <button id="submit-login" type="submit" class="btn submit"> Entrar </button>
+          </form>
+          <p class="register"> Não tem uma conta? <br><a href="register.html"> Criar conta </a></p>
+        </div>
     </section>
-  </header>
-  <section class="container">
-    <div class="showcase">
-      <div class="mockup">
-        <img class="mockups" src="/img/Brand/dev-brand.png" alt="mockups dev fora da caixa">
-        <a class="txt-mockup" href="register.html">
-          <h4>Faça parte deste time!</h4>
-        </a>
-      </div>
-      <div class="area-login">
-        <img class="b-area-login" src="/img/Brand/dev-icone.png" alt="">
-        <form action="" method="post" class="form">
-          <label for="email">Usuário: </label>
-            <input
-              class          = "input-login"
-              type           = "email"
-              name           = "email"
-              id             = "email-login"
-              placeholder    = "minha_conta@exemplo.com"
-              autocomplete   = "email"
-              autofocus>
-          <label for="password"> Senha: </label>
-            <input
-              class          = "input-login"
-              type           = "password"
-              name           = "password"
-              id             = "password-login"
-              placeholder    = "senha"
-              autocomplete   = "password">
-              <p class="fail">Esqueci a senha!</p>
-          <button id="submit-login" type="submit" class="btn submit"> Entrar </button>
-        </form>
-        <p class="register"> Não tem uma conta? <br><a href="register.html"> Criar conta </a></p>
-      </div>
-  </section>
+  </login>
+  <view class="disable">
+    <div class="top">
+      <h1 class="saudacao">Olá, <span>Nome</span>.</h1>
+      <button class="exit">SAIR</button>
+    </div>
+    <main class="full-dialog into">
+      <div class="dialog">
+        <div class="area-register">
+          <img class="b-area-login" src="/img/Brand/dev-icone.png" alt="">
+          <h2>Seus dados fornecidos!</h2>
+          <form action="" method="post" class="form-register form-view">
+            <div class="full-name">
+              <label for="nome-register"></label>
+              <input
+                class         = "input"
+                type          = "text"
+                name          = "nome-register"
+                id            = "nome-register"
+                disabled>
+              <label for="sobrenome-register"></label>
+              <input
+                class         = "input"
+                type          = "text"
+                name          = "sobrenome-register"
+                id            = "sobrenome-register"
+                autocomplete  = "family-name"
+                disabled>
+              </div>
+              <div class="b-day">
+              <label class="input" for="nascimento">Nascimento: </label>
+              <input
+              class           = "input"
+              name            = "nascimento"
+              id              = "nascimento"
+              disabled>
+            </div>
+            <div class="b-day">
+              <label class="input" for="nascimen">Sexo: </label>
+              <input
+              class           = "input"
+              name            = "nascimen"
+              id              = "nascimen"
+              disabled>
+            </div>
+            <div class="email">
+              <label class="input" for="email-register">E-mail: </label>
+              <input
+                class         = "input"
+                type          = "email"
+                name          = "email-register"
+                id            = "email-register"
+                disabled>
+              </div>
+              <div class="create-password">
+              <label class="input" for="password-register">Senha: </label>
+              <input
+                class         = "input"
+                type          = "text"
+                name          = "password-register"
+                id            = "password-register"
+                disabled>
+            </div>
+            <!-- <button type="submit" class="btn submit-edit" >Editar</button>
+            <button type="submit" class="btn submit-clear" >Excluir conta</button> -->
+          </form>
+        </div>
+    </main>
+  </view>
   <noscript>Seu navegador não tem suporte para JavaScript!</noscript>
 </body>
 </html>
