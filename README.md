@@ -5,6 +5,9 @@
 
 ----
 
+
+----
+
 ## 🛠️ Recursos:
 - ### Página inicial
 ![](img/show/pg-inicial.jpg)
@@ -81,11 +84,28 @@ Envio de dados devidamente preenchidos;
 
 - ✅ Validar data do formulário para uma idade específica;
 - ✅ Adicionar caixas de diálogo para melhorar a compreensão das expressões de erro;
-- Guardar dados do formulário localStorage ou em banco de dados;
-- Usar dados do formulário para login;
-- Criar aba de exibição de dados;
-- Exibir dados após o login;
+- ✅ Guardar dados do formulário localStorage;
+- ✅ Usar dados do formulário para login;
+- ✅ Criar exibição de dados armazenados;
+- ✅ Exibir dados após o login;
+- ✅ Sair por meio de comando;
+- Permitir edição de dados do usuário;
+- Permitir exclusão total de dados cadastrados.
+- Modo escuro, tema: Dark.
 
 ----
 
+## 📖 Abordagens
+
+- Criação de API interna;
+- Armazenamento de dados, localStorage;
+- POO, MVC, convenções, e abordagens de segurança;
+- CRUD;
+- JSON: envio, requisição e manipulação;
+
+----
+<div align='center'>
+<a href="https://raimonesbarros.github.io/dev-fora-da-caixa/"><button style='padding:.5em; background-color:skyblue; border-radius:.5em; font-weight:bold'> 📤 Acessar Deploy 📤 </button> </a>
+
+----
 ----
