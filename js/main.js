@@ -98,6 +98,9 @@ formulario.addEventListener("submit", (evt)=>{
         usuarioController.adicionar(evt);
         msgAlert("Cadastro efetuado com sucesso!", "sucess")
         limpar()
+        setTimeout(()=>{
+            window.location.href = 'index.html';
+        }, 2500)
     }
     verify1 = true
 })
