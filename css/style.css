@@ -43,7 +43,7 @@ body{
   margin          : auto;
 }
 
-.header{
+.header, .top{
   display         : flex;
   justify-content : space-between;
   align-items     : center;
@@ -163,6 +163,7 @@ body{
 }
 
 .area-login{
+  position: relative;
   background-color: var(--fraca);
   display         : flex;
   flex-direction  : column;
@@ -206,7 +207,7 @@ input:focus{
 }
 
 .disable{
-  display: none;
+  display         : none;
 }
 
 .fail{
@@ -217,19 +218,44 @@ input:focus{
 }
 
 .vazio{
-  border-bottom: red solid;
+  border-bottom   : red solid;
 }
 
-.submit, .submit-register{
+.top{
+  width           : 90%;
+  margin          : auto;
+}
+
+.saudacao{
+  margin          : .5em 0;
+}
+
+.exit{
+  padding         : .5em;
+  color           : red;
+  font-size       : 1em;
+}
+
+.submit, .submit-register, .submit-edit, .submit-clear{
   background-color: var(--secundária);
   color           : #fff;
   padding         : .5em;
   border-radius   : 30px;
-  box-shadow      : 1px 1px 3px var(--sombra);
+  box-shadow      : 0 0 5px var(--sombra);
   cursor          : pointer;
 }
 
-.submit:focus{
+
+.submit-edit, .submit-clear{
+  width           : 40%;
+  margin-top      : 1em;
+}
+
+.submit-clear{
+  background-color: red;
+}
+
+.submit:focus, .submit-register:focus, .submit-edit:focus, .submit-clear:focus{
   outline         : none;
   border          : var(--primaria) solid;
 }
@@ -248,6 +274,10 @@ input:focus{
   align-items     : center;
 }
 
+.into{
+  height          : calc(100vh - 69px) ;
+}
+
 .dialog{
   background-color: var();
   display         : flex;
@@ -260,25 +290,27 @@ input:focus{
 .area-register{
   background-color: var(--fraca);
   box-shadow      : 1px 1px 3px var(--sombra);
-  position: relative;
+  position        : relative;
   display         : flex;
   flex-direction  : column;
   justify-content : center;
   align-items     : center;
   border-radius   : 15px;
+  width           : 70vw;
+  max-width       : 500px;
 }
 
 .messenger{
-  position: absolute;
-  top: 1em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  height: 2.5em;
-  border-radius: .5em;
-  font-size: 1.1em;
-  color: #fff;
+  position        : absolute;
+  top             : 1em;
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  width           : 90%;
+  padding         : .3em;
+  border-radius   : .5em;
+  font-size       : 1.1em;
+  color           : #fff;
 }
 
 .alert{
@@ -295,6 +327,7 @@ input:focus{
   justify-content : center;
   align-items     : center;
   padding         : 1em;
+  width: 100%;
 }
 
 .full-name, .b-day, .sexo, .email, .create-password{
