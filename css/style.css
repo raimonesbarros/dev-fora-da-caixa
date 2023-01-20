@@ -178,6 +178,10 @@ body{
   width           : 70px;
 }
 
+.area-register h2{
+  text-align: center;
+}
+
 .form{
   width           : 14em;
   display         : flex;
@@ -224,6 +228,7 @@ input:focus{
 .top{
   width           : 90%;
   margin          : auto;
+  padding         : 0;
 }
 
 .saudacao{
@@ -306,6 +311,7 @@ input:focus{
   display         : flex;
   justify-content : center;
   align-items     : center;
+  text-align      : center;
   width           : 90%;
   padding         : .3em;
   border-radius   : .5em;
@@ -328,6 +334,10 @@ input:focus{
   align-items     : center;
   padding         : 1em;
   width: 100%;
+}
+
+.show{
+  width           : 100%;
 }
 
 .full-name, .b-day, .sexo, .email, .create-password{
