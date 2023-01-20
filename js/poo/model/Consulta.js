@@ -1,9 +1,9 @@
 export class Consulta{
 
-  constructor(id){
-    this._inputEmail = document.querySelector(id).value
-    this._emailLocal = localStorage.getItem(this._inputEmail) ? 'sim' : 'nao'
-    this._dataJSON   = localStorage.getItem(this._inputEmail)
+  constructor(idEmail){
+    this._inputEmail = document.querySelector(idEmail)
+    this._emailLocal = localStorage.getItem(this._inputEmail.value) ? 'sim' : 'nao'
+    this._dataJSON   = localStorage.getItem(this._inputEmail.value)
 
   }
 
