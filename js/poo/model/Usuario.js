@@ -1,11 +1,4 @@
 export class Usuario{
-  _nome
-  _sobrenome
-  _nascimento
-  _sexo
-  _email
-  _senha
-  
 
   constructor(nome, sobrenome, nascimento, sexo, email, senha) {
     this._nome       = nome

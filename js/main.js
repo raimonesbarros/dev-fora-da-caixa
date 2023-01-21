@@ -1,5 +1,5 @@
 import { UsuarioController } from '../js/poo/controller/UsuarioController.js'
-import { Consulta } from './poo/model/Consulta.js'
+import { Consulta }          from './poo/model/Consulta.js'
 
 // Formulário de Cadastro
 const inputs       = [...document.querySelectorAll("input:not([type=radio])")]
@@ -107,11 +107,11 @@ formulario.addEventListener("submit", (evt)=>{
 
 // Calcular diferença de data
 function diffData(){
-    const b_day = new Date(nascimmento.value)
-    let date = new Date()
-    let yearOld = b_day.getFullYear()
+    const b_day     = new Date(nascimmento.value)
+    let date        = new Date()
+    let yearOld     = b_day.getFullYear()
     let currentYear = date.getFullYear()
-    let diff = currentYear - yearOld
+    let diff        = currentYear - yearOld
     return diff
 }
 

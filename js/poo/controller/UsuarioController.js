@@ -1,13 +1,7 @@
-import { Usuario } from "../model/Usuario.js";
+import { Usuario }       from "../model/Usuario.js";
 import { ListaUsuarios } from "../model/ListaUsuarios.js";
 
 export class UsuarioController{
-  _inputNome
-  _inputSobrenome
-  _inputNascimento
-  _inputSexo
-  _inputEmail
-  _inputSenha
 
   constructor() {
      this._inputNome       = document.querySelector("#nome-register");
@@ -17,10 +11,10 @@ export class UsuarioController{
      this._inputEmail      = document.querySelector("#email-register");
      this._inputSenha      = document.querySelector("#password-register");
 
-     this._listaUsuarios    = new ListaUsuarios();
+     this._listaUsuarios   = new ListaUsuarios();
   }
   
-  adicionar(evt) {
+  adicionar() {
   
     let _usuarioJSON = JSON.stringify(this._novoUsuario())
     localStorage.setItem(this._inputEmail.value, _usuarioJSON)
@@ -40,11 +34,11 @@ export class UsuarioController{
     }
 }
 // Buscar e setar o o valor para o sexo
-const sexo=[...document.querySelectorAll("[type=radio]")]
-let sexoValue='';
+const sexo    = [...document.querySelectorAll("[type=radio]")]
+let sexoValue = '';
 sexo.map(el=>{
     el.addEventListener("click", evt=>{
-        const event=evt.target
-        sexoValue = event.value
+        const event = evt.target
+        sexoValue   = event.value
     })
 })

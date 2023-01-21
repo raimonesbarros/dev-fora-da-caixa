@@ -99,12 +99,8 @@ export class View{
   }
 
   viewUpdate(local, model){
-    let update = document.querySelector(local)
+    let update       = document.querySelector(local)
     update.innerHTML = model
   }
 
-  dataUpdate(){
-    
-  }
-  
 }
