@@ -105,12 +105,6 @@ Botão sair, para efetuar logoff
 
 ----
 
-## 👀 Demonstração
-
-[](img/show/show-project.mp4)
-
-----
-
 <div align='center'>
 <a href="https://raimonesbarros.github.io/dev-fora-da-caixa/"><button style='padding:.5em; background-color:skyblue; border-radius:.5em; font-weight:bold'> 📤 Acessar Deploy 📤 </button> </a>
 
