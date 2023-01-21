@@ -1,20 +1,20 @@
 {
-  "name": "dev-fora-da-caixa",
-  "version": "1.0.0",
-  "description": "",
-  "main": "./js/main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name"        : "dev-fora-da-caixa",
+  "version"     : "1.0.0",
+  "description" : "",
+  "main"        : "./js/main.js",
+  "scripts"     : {
+    "test"      : "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/raimonesbarros/dev-fora-da-caixa.git"
+  "repository"  : {
+    "type"      : "git",
+    "url"       : "git+https://github.com/raimonesbarros/dev-fora-da-caixa.git"
   },
-  "author": "Raimones",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/raimonesbarros/dev-fora-da-caixa/issues"
+  "author"      : "Raimones Barros",
+  "license"     : "MIT",
+  "bugs"        : {
+    "url"       : "https://github.com/raimonesbarros/dev-fora-da-caixa/issues"
   },
-  "homepage": "https://github.com/raimonesbarros/dev-fora-da-caixa#readme",
-  "type": "module"
+  "homepage"    : "https://github.com/raimonesbarros/dev-fora-da-caixa#readme",
+  "type"        : "module"
 }
