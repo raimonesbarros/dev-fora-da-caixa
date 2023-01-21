@@ -10,13 +10,16 @@
 
 ## 🛠️ Recursos:
 - ### Página inicial
-![](img/show/pg-inicial.jpg)
+
+![](img/show/init.jpg)
 
 Dinâmica de login de usuário;
 
 Inputs de usuário e senha;
 
 Botão de submit;
+
+flash messages;
 
 Link para cadastro;
 
@@ -25,7 +28,8 @@ Botão chamariz para área de cadastro.
 *outros recursos desativados. 
 
 - ### Formulário de cadastro
-![](img/show/pg-form.jpg)
+
+![](img/show/form.jpg)
 
 Dinâmica de cadastrar novo usuário;
 
@@ -33,19 +37,21 @@ Input de informações pessoais e de futuro login;
 
 Expressão de foco no campo selecionado;
 
+Expressões de inconformidades no cadastro;
+
+flash messages;
+
 Botão de submit para enviar os dados;
 
 Link para página de login;
 
-![](img/show/erro.jpg)
+- ### Acesso por login
 
-Expressão de erro nos campos NÃO preenchidos devidamente ao tentar enviar as informações;
+![](img/show/show.jpg)
 
-Inclusive semelhança das senhas inseridas e padrão oito caracteres.
+Acesso aos dados fornecidos após o login;
 
-![](img/show/envio.jpg)
-
-Envio de dados devidamente preenchidos;
+Botão sair, para efetuar logoff
 
 ----
 
@@ -58,9 +64,10 @@ Envio de dados devidamente preenchidos;
 
 <div align="center">
 
-![](img/show/mobile1.jpg)
-![](img/show/mobile2.jpg)
-![](img/show/mobile3.jpg)
+![](img/show/mob1.jpg)
+![](img/show/mob2.jpg)
+![](img/show/mob3.jpg)
+![](img/show/mob4.jpg)
 
 </div>
 
@@ -82,13 +89,6 @@ Envio de dados devidamente preenchidos;
 
 ## ⬆️ Atualizações
 
-- ✅ Validar data do formulário para uma idade específica;
-- ✅ Adicionar caixas de diálogo para melhorar a compreensão das expressões de erro;
-- ✅ Guardar dados do formulário localStorage;
-- ✅ Usar dados do formulário para login;
-- ✅ Criar exibição de dados armazenados;
-- ✅ Exibir dados após o login;
-- ✅ Sair por meio de comando;
 - Permitir edição de dados do usuário;
 - Permitir exclusão total de dados cadastrados.
 - Modo escuro, tema: Dark.
@@ -98,12 +98,19 @@ Envio de dados devidamente preenchidos;
 ## 📖 Abordagens
 
 - Criação de API interna;
-- Armazenamento de dados, localStorage;
+- Persistência de dados, localStorage;
 - POO, MVC, convenções, e abordagens de segurança;
 - CRUD;
 - JSON: envio, requisição e manipulação;
 
 ----
+
+## 👀 Demonstração
+
+[](img/show/show-project.mp4)
+
+----
+
 <div align='center'>
 <a href="https://raimonesbarros.github.io/dev-fora-da-caixa/"><button style='padding:.5em; background-color:skyblue; border-radius:.5em; font-weight:bold'> 📤 Acessar Deploy 📤 </button> </a>
 
