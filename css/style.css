@@ -179,7 +179,7 @@ body{
 }
 
 .area-register h2{
-  text-align: center;
+  text-align      : center;
 }
 
 .form{
@@ -333,7 +333,7 @@ input:focus{
   justify-content : center;
   align-items     : center;
   padding         : 1em;
-  width: 100%;
+  width           : 100%;
 }
 
 .show{
