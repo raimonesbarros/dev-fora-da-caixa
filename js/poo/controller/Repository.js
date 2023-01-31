@@ -1,7 +1,7 @@
 export class Repository{
 
   constructor(){
-    this._objLocal = []
+    this._objLocal = ''
     this._objJson  = ''
   }
 
@@ -13,11 +13,11 @@ export class Repository{
 
   downRepo(){
     this._objJson  = localStorage.getItem('_repository')
-    this._objLocal = JSON.parse(this._objJson)
+    this._objJson ? this._objLocal = JSON.parse(this._objJson) : this._objLocal = []
   }
 
-  get objLocal(){
+  get repo(){
     this.downRepo()
-    return this._objLocal
+    return [].concat(this._objLocal)
   }
 }

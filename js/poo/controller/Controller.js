@@ -2,9 +2,14 @@ import { User }       from "../model/User.js";
 import { UserList }   from "../model/UserList.js";
 import { Verify }     from "../model/Verify.js";
 import { Repository } from "./Repository.js";
+import { CreateView } from "../view/CreateView.js";
+import { Show }       from "../view/Show.js";
 
-let userList = new UserList()
-let verify   = new Verify()
+let userList   = new UserList()
+let verify     = new Verify()
+let repository = new Repository()
+let createView = new CreateView()
+let show       = new Show()
 
 export class Controller{
 
@@ -19,13 +24,43 @@ export class Controller{
 
   }
 
-  add(evt){
+  createRepo(){
+    repository.repo[0] ? '' : localStorage.setItem('_repository', [])
+  }
+
+  login(evt){
     evt.preventDefault()
 
-    verify.chekForm(userList.list)
+    verify.checkLogin(repository.repo)
+    if(verify.ok){
+      show.showView()
+    }
+    verify.ok = true
+  }
 
-    verify.ok ? userList.addUser(this.newUser()) : ''
-    verify.ok ? this.clearForm() : ''
+  register(evt){
+    evt.preventDefault()
+
+    
+    verify.checkRegister(repository.repo)
+    
+    if(verify.ok){
+      let last = repository.repo.length
+      last > 0 ? User.amountUser = repository.repo[last-1].id + 1 : User.amountUser = 1
+
+      userList.setList(repository.repo)
+      userList.addUser(this.newUser())
+      repository.upRepo(userList.list)
+
+      this.clearForm()
+
+      createView.flashMsg('Cadastro efetuado com sucesso!', 'sucess', '.msg-register')
+
+      setTimeout(()=>{
+        show.showInit()
+      }, 2000)
+    }
+
 
     verify.ok = true
 

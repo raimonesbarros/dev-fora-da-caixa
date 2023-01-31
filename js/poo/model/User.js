@@ -9,7 +9,7 @@ export class User{
     this._sex       = sex
     this._email     = email
     this._password  = password
-    User.amountUser+= 1
+    
   }
 
   get ID(){
