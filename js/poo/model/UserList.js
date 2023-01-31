@@ -14,7 +14,7 @@ export class UserList{
     })
   }
 
-  set setList(list){
+  setList(list){
     this._list = list
   }
 
