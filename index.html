@@ -33,14 +33,14 @@
       <div class="showcase">
         <div class="mockup">
           <img class="mockups" src="img/Brand/dev-brand.png" alt="mockups dev fora da caixa">
-          <a class="txt-mockup" href="register.html">
+          <a class="txt-mockup for-register">
             <h4>Faça parte deste time!</h4>
           </a>
         </div>
         <div class="area-login">
           <img class="b-area-login" src="img/Brand/dev-icone.png" alt="">
           <p class="messenger msg-login"><!--flash msg--></p>
-          <form action="" method="post" class="form">
+          <form class="form">
             <label for="email">Usuário: </label>
               <input
                 class          = "input-login"
@@ -61,18 +61,18 @@
                 <p class="fail">Esqueci a senha!</p>
             <button id="submit-login" type="submit" class="btn submit"> Entrar </button>
           </form>
-          <p class="register"> Não tem uma conta? <br><a href="register.html"> Criar conta </a></p>
+          <p class="register"> Não tem uma conta? <br><a href="#" class="for-register"> Criar conta </a></p>
         </div>
     </section>
   </login>
-  <register>
+  <register class="disable">
     <main class="full-dialog">
       <div class="dialog">
         <div class="area-register">
-          <p class="messenger msg-register"></p>
+          <p class="messenger msg-register"><!--flash msg--></p>
           <img class="b-area-login" src="img/Brand/dev-icone.png" alt="">
           <h2>Cadastrar-se</h2>
-          <form action="" method="post" class="form-register">
+          <form class="form-register">
             <div class="full-name">
               <label for="nome-register"></label>
               <input
@@ -152,7 +152,7 @@
                 placeholder  = "senha">
             </div>
             <button type="submit" class="btn submit-register" >Cadastrar</button>
-            <p class="register">Já tenho uma conta<br><a href="index.html">Entrar</a></p>
+            <p class="register">Já tenho uma conta<br><a href="#" class="for-login">Entrar</a></p>
           </form>
         </div>
     </main>
