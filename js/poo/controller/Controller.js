@@ -22,10 +22,19 @@ export class Controller{
     this.pass  = document.querySelector('#password-register')
     this.pass2 = document.querySelector('#repeat-password')
 
+    this.user  = document.querySelector('#email-login')
+    this.key   = document.querySelector('#password-login')
+
   }
 
-  createRepo(){
-    repository.repo[0] ? '' : localStorage.setItem('_repository', [])
+  init(){
+    if(repository.user[0]){
+      show.showInfo('.show', repository.user)
+      show.showView()
+    } else{
+      show.showInit()
+      repository.repo[0] ? '' : localStorage.setItem('_repository', [])
+    }
   }
 
   login(evt){
@@ -33,9 +42,25 @@ export class Controller{
 
     verify.checkLogin(repository.repo)
     if(verify.ok){
+      show.showInfo('.show', verify.data)
       show.showView()
+      repository.upRepo(verify.data, '_currentUser')
+      this.user.value = ''
+      this.key.value  = ''
     }
     verify.ok = true
+  }
+
+  exit(){
+    show.showInit()
+    localStorage.removeItem('_currentUser')
+  }
+
+  deleteAccount(){
+    userList.setList(repository.repo)
+    userList.removeUser(repository.user[0]._email)
+    repository.upRepo(userList.list, '_repository')
+    this.exit()
   }
 
   register(evt){
@@ -50,7 +75,7 @@ export class Controller{
 
       userList.setList(repository.repo)
       userList.addUser(this.newUser())
-      repository.upRepo(userList.list)
+      repository.upRepo(userList.list, '_repository')
 
       this.clearForm()
 
@@ -61,9 +86,11 @@ export class Controller{
       }, 2000)
     }
 
-
     verify.ok = true
+  }
 
+  toRegister(){
+    show.showRegister()
   }
 
   newUser(){

@@ -5,19 +5,25 @@ export class Repository{
     this._objJson  = ''
   }
 
-  upRepo(list){
-    this._objLocal = list
-    this._objJson  = JSON.stringify(this._objLocal)
-    localStorage.setItem('_repository', this._objJson)
-  }
-
-  downRepo(){
-    this._objJson  = localStorage.getItem('_repository')
-    this._objJson ? this._objLocal = JSON.parse(this._objJson) : this._objLocal = []
+  get user(){
+    this.downRepo('_currentUser')
+    return this._objLocal
   }
 
   get repo(){
-    this.downRepo()
+    this.downRepo('_repository')
     return [].concat(this._objLocal)
   }
+
+  upRepo(list, name){
+    this._objLocal = list
+    this._objJson  = JSON.stringify(this._objLocal)
+    localStorage.setItem(name, this._objJson)
+  }
+
+  downRepo(name){
+    this._objJson  = localStorage.getItem(name)
+    this._objJson ? this._objLocal = JSON.parse(this._objJson) : this._objLocal = []
+  }
+
 }
