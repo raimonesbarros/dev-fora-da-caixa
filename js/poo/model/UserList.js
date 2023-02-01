@@ -10,7 +10,7 @@ export class UserList{
 
   removeUser(user){
     this._list = this._list.filter(el=>{
-      return el._user!=user
+      return el._email!=user
     })
   }
 

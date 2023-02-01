@@ -6,8 +6,13 @@ export class Verify{
 
   constructor(){
     this.ok    = true
+    this._data = ''
     this.date  = new Date()
 
+  }
+
+  get data(){
+    return [].concat(this._data)
   }
   
   isEmpty(){
@@ -52,7 +57,6 @@ export class Verify{
         show.flashMsg('Usuário possui cadastro!', 'alert', '.msg-register')
       }
     })
-    
   }
 
   checkPass(){
@@ -70,21 +74,24 @@ export class Verify{
   }
 
   checkLogin(list){
-    let input = document.querySelectorAll('login input')
-    let user  = document.querySelector('#email-login')
-    let pass  = document.querySelector('#password-login')
-    console.log(list[0]._email)
-    console.log(list[0]._email.includes(user.value))
+    let user     = document.querySelector('#email-login')
+    let pass     = document.querySelector('#password-login')
+    let input    = document.querySelectorAll('login input')
+    let includes = false
     list.map(el=>{
-      if(el._email.includes(user.value)){
-        el._password === pass.value ? '' : this.ok = false
-        el._password === pass.value ? '' : show.flashMsg('Senha incorreta!', 'alert', '.msg-login')
-      } else if (!el._email.includes(user.value)){
-        this.ok = false
-        user.classList.add('vazio')
-        show.flashMsg('Usuário não possui cadastro!', 'alert', '.msg-login')
-      }
+      el._email.includes(user.value) ? includes = true : ''
+      el._email.includes(user.value) ? this._data = el : ''
     })
+    if(list[0] && includes){
+      let key = this._data._password === pass.value
+      key ? '' : this.ok = false
+      key ? '' : show.flashMsg('Senha incorreta!', 'alert', '.msg-login')
+    } else {
+      this.ok = false
+      user.classList.add('vazio')
+      show.flashMsg('Usuário não possui cadastro!', 'alert', '.msg-login')
+    }
+
     input.forEach(el=>{
       if(!el.value){
         el.classList.add('vazio')
