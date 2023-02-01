@@ -14,18 +14,18 @@
     <header>
       <section class="container header">
         <img id="logo" class="" src="img/Brand/dev-full-right-120.png" alt="logo dev fora da caixa">
-        <nav class="nav disable">
-          <a href="#" class="nav-item close">Início</a>
-          <a href="#" class="nav-item close">Sobre</a>
-          <a href="#" class="nav-item close">Cursos</a>
-          <a href="#" class="nav-item close">Serviços</a>
-          <a href="#" class="nav-item close">Contatos</a>
+        <nav class="nav">
+          <a href="#" class="nav-item">Início</a>
+          <a href="#" class="nav-item">Sobre</a>
+          <a href="#" class="nav-item">Cursos</a>
+          <a href="#" class="nav-item">Serviços</a>
+          <a href="#" class="nav-item">Contatos</a>
         </nav>
         <button id="login" class="btn login"> Entrar </button>
         <div class="full-sandwich">
           <div class="sandwich s1"></div>
-          <div class="sandwich s2 close-s2"></div>
-          <div class="sandwich s3 close-s3"></div>
+          <div class="sandwich s2 open-s2"></div>
+          <div class="sandwich s3 open-s3"></div>
         </div>
       </section>
     </header>
@@ -33,7 +33,7 @@
       <div class="showcase">
         <div class="mockup">
           <img class="mockups" src="img/Brand/dev-brand.png" alt="mockups dev fora da caixa">
-          <a class="txt-mockup for-register">
+          <a class="txt-mockup to-register">
             <h4>Faça parte deste time!</h4>
           </a>
         </div>
@@ -61,7 +61,7 @@
                 <p class="fail">Esqueci a senha!</p>
             <button id="submit-login" type="submit" class="btn submit"> Entrar </button>
           </form>
-          <p class="register"> Não tem uma conta? <br><a href="#" class="for-register"> Criar conta </a></p>
+          <p class="register"> Não tem uma conta? <br><a href="#" class="to-register"> Criar conta </a></p>
         </div>
     </section>
   </login>
@@ -152,7 +152,7 @@
                 placeholder  = "senha">
             </div>
             <button type="submit" class="btn submit-register" >Cadastrar</button>
-            <p class="register">Já tenho uma conta<br><a href="#" class="for-login">Entrar</a></p>
+            <p class="register">Já tenho uma conta<br><a href="#" class="to-init">Entrar</a></p>
           </form>
         </div>
     </main>
@@ -160,7 +160,7 @@
   <view class="disable">
     <div class="top">
       <h1 class="saudacao">Olá, <span></span>.</h1>
-      <button class="exit">SAIR</button>
+      <button class="exit">Sair</button>
     </div>
     <main class="full-dialog into">
       <div class="dialog">
@@ -171,6 +171,7 @@
             <div class="show">
               <!--show info here -->
             </div>
+            <button class="submit-clear">Excluir conta</button>
           </form>
         </div>
       </div>

@@ -229,9 +229,12 @@ input:focus{
 }
 
 .exit{
-  padding         : .5em;
-  color           : red;
-  font-size       : 1em;
+  background-color: var(--secundária);
+  padding         : .4em .8em;
+  color           : #eee;
+  font-size       : .85em;
+  border-radius   : 1em;
+  cursor          : pointer;
 }
 
 .submit, .submit-register, .submit-edit, .submit-clear{
@@ -243,14 +246,10 @@ input:focus{
   cursor          : pointer;
 }
 
-
-.submit-edit, .submit-clear{
+.submit-clear{
+  background-color: var(--primaria);
   width           : 40%;
   margin-top      : 1em;
-}
-
-.submit-clear{
-  background-color: red;
 }
 
 .submit:focus, .submit-register:focus, .submit-edit:focus, .submit-clear:focus{
@@ -309,15 +308,15 @@ input:focus{
   padding         : .3em;
   border-radius   : .5em;
   font-size       : 1.1em;
-  color           : #fff;
+  color           : #eee;
 }
 
 .alert{
-  background-color: #f04040;
+  background-color: #ff4747;
 }
 
 .sucess{
-  background-color: #008000d7;
+  background-color: #008f00;
 }
 
 .form-register{
@@ -358,54 +357,54 @@ input:focus{
 
 @media screen and (max-width: 768px) {
   #logo{
-    width: 150px;
+    width           : 150px;
   }
   .nav{
     background-color: #3690D4;
-    position: absolute;
-    flex-direction: column;
-    width: 100%;
-    top: 65px;
-    left: 0;
-    padding: 15px 0;
-    border-radius: 0 0 1em 1em;
-    overflow: hidden;
+    position        : absolute;
+    flex-direction  : column;
+    width           : 100%;
+    top             : 65px;
+    left            : 0;
+    padding         : 15px 0;
+    border-radius   : 0 0 1em 1em;
+    overflow        : hidden;
   }
   .nav-item, .s1, .s2, .s3{
-    width: 100%;
-    text-align: center;
-    color: #eee;
+    width           : 100%;
+    text-align      : center;
+    color           : #eee;
   }
 
   .open{
-    animation: enter 0.3s ease-out forwards reverse;
+    animation       : enter 0.3s ease-out forwards reverse;
   }
   .close{
-    animation: enter 0.3s ease-out forwards;
+    animation       : enter 0.3s ease-out forwards;
   }
 
   .full-sandwich{
-    width: 30px;
-    display       : flex;
+    width           : 30px;
+    display         : flex;
   }
   .showcase{
-    flex-direction: column;
-    padding: 0;
+    flex-direction  : column;
+    padding         : 0;
   }
   .area-login{
-    margin-top    : 2em;
+    margin-top      : 2em;
   }
   .full-dialog{
-    width         : 100%;
+    width           : 100%;
   }
   .dialog{
-    padding       : 0;
+    padding         : 0;
   }
   .area-register{
-    width         : 95vw;
+    width           : 95vw;
   }
   .form-register{
-    width         : 100%;
-    padding       : 1em 0;
+    width           : 100%;
+    padding         : 1em 0;
   }
 }
