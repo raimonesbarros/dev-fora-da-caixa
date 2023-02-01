@@ -1,9 +1,13 @@
+import { CreateView } from "./CreateView.js"
+
 export class Show{
 
   constructor(){
-    this.login    = document.querySelector('login')
-    this.register = document.querySelector('register')
-    this.view     = document.querySelector('view')
+    this.login      = document.querySelector('login')
+    this.register   = document.querySelector('register')
+    this.view       = document.querySelector('view')
+
+    this.createView = new CreateView()
   }
 
   showInit(){
@@ -22,5 +26,9 @@ export class Show{
     this.view.classList.remove('disable')
     this.login.classList.add('disable')
     this.register.classList.add('disable')
+  }
+
+  showInfo(selectorLocal, data){
+    this.createView.viewData(selectorLocal, data)
   }
 }
