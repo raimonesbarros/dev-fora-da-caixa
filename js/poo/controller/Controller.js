@@ -56,7 +56,8 @@ export class Controller{
     localStorage.removeItem('_currentUser')
   }
 
-  deleteAccount(){
+  deleteAccount(evt){
+    evt.preventDefault()
     userList.setList(repository.repo)
     userList.removeUser(repository.user[0]._email)
     repository.upRepo(userList.list, '_repository')

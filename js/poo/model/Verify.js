@@ -7,8 +7,6 @@ export class Verify{
   constructor(){
     this.ok    = true
     this._data = ''
-    this.date  = new Date()
-
   }
 
   get data(){
@@ -19,22 +17,17 @@ export class Verify{
     let input = document.querySelectorAll('register input:not([type=radio])')
     input.forEach(el=>{
       if(!el.value){
-        el.classList.add('vazio')
-        this.ok = false
-        show.flashMsg('Preencha o(s) campo(s) vazio(s)!', 'alert', '.msg-register')
+        this.erro(el, 'Preencha o(s) campo(s) vazio(s)!', 'alert', '.msg-register')
       }
     })
   }
   
   hasAge(){
     let inputBirth  = document.querySelector('#nascimento')
-    let currentYear = this.date.getFullYear()
-    let birth       = new Date(inputBirth.value)
-    let birthYear   = birth.getFullYear()
-    if(birthYear > currentYear - 10){
-      this.ok = false 
-      inputBirth.classList.add('vazio') 
-      show.flashMsg('Idade deve ser maior que 10 anos!', 'alert', '.msg-register')
+    let currentYear = new Date().getFullYear()
+    let birth       = new Date(inputBirth.value).getFullYear()
+    if(birth > currentYear - 10){
+      this.erro(inputBirth, 'Idade deve ser maior que 10 anos!', 'alert', '.msg-register')
     }
   }
   
@@ -42,9 +35,7 @@ export class Verify{
     let radio = document.querySelector('input[type=radio]:checked')
     let label = document.querySelector('.labelsexo')
     if(!radio){
-      this.ok = false
-      label.classList.add('vazio')
-      show.flashMsg('Selecione o campo sexo!', 'alert', '.msg-register')
+      this.erro(label, 'Selecione o campo sexo!', 'alert', '.msg-register')
     }
   }
 
@@ -52,9 +43,7 @@ export class Verify{
     let user = document.querySelector('#email-register')
     list.map(el=>{
       if(el._email.includes(user.value)){
-        this.ok = false
-        user.classList.add('vazio')
-        show.flashMsg('Usuário possui cadastro!', 'alert', '.msg-register')
+        this.erro(user, 'Usuário possui cadastro!', 'alert', '.msg-register')
       }
     })
   }
@@ -63,13 +52,9 @@ export class Verify{
     let passCreate = document.querySelector('#password-register')
     let passRepeat = document.querySelector('#repeat-password')
     if(passCreate.value != passRepeat.value){
-      this.ok = false
-      passRepeat.classList.add('vazio')
-      show.flashMsg('Senhas não conferem!', 'alert', '.msg-register')
+        this.erro(passRepeat, 'Senhas não conferem!', 'alert', '.msg-register')
     } else if(passCreate.value.length < 8){
-      this.ok = false
-      passCreate.classList.add('vazio')
-      show.flashMsg('Senha muito curta!', 'alert', '.msg-register')
+        this.erro(passCreate, 'Senha muito curta!', 'alert', '.msg-register')
     }
   }
 
@@ -84,21 +69,22 @@ export class Verify{
     })
     if(list[0] && includes){
       let key = this._data._password === pass.value
-      key ? '' : this.ok = false
-      key ? '' : show.flashMsg('Senha incorreta!', 'alert', '.msg-login')
+      key ? '' : this.erro(pass, 'Senha incorreta!', 'alert', '.msg-login')
     } else {
-      this.ok = false
-      user.classList.add('vazio')
-      show.flashMsg('Usuário não possui cadastro!', 'alert', '.msg-login')
+      this.erro(user, 'Usuário não possui cadastro!', 'alert', '.msg-login')
     }
 
     input.forEach(el=>{
       if(!el.value){
-        el.classList.add('vazio')
-        this.ok = false
-        show.flashMsg('Preencha o(s) campo(s) vazio(s)!', 'alert', '.msg-login')
+        this.erro(el, 'Preencha o(s) campo(s) vazio(s)!', 'alert', '.msg-login')
       }
     })
+  }
+  
+  erro(el_vazio, msg, type, msgLocal){
+    el_vazio.classList.add('vazio')
+    this.ok = false
+    show.flashMsg(msg, type, msgLocal)
   }
 
   checkRegister(list){

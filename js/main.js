@@ -24,41 +24,24 @@ menuBtn.addEventListener('click', ()=>{
   menu.classList.toggle('disable')
 })
 
-submit_login.addEventListener('click', evt=>{
-  controller.login(evt)
-})
-
 toRegister.forEach(el=>{
-  el.addEventListener('click',()=>{
-    controller.toRegister()
-  })
-})
-
-toInit.addEventListener('click',()=>{
-  controller.init()
-})
-
-submit_register.addEventListener('click', evt=>{
-  controller.register(evt)
-})
-
-exit.addEventListener('click', ()=>{
-  controller.exit()
-})
-
-remove.addEventListener('click', evt=>{
-  evt.preventDefault()
-  controller.deleteAccount()
+  el.addEventListener('click', ()=> controller.toRegister())
 })
 
 inputs.forEach(input=>{
-  input.addEventListener('focus', ()=>{
-    input.classList.remove('vazio')
-  })
+  input.addEventListener('focus', ()=> input.classList.remove('vazio'))
 })
 
+submit_login.addEventListener('click', evt=> controller.login(evt))
+
+toInit.addEventListener('click', ()=> controller.init())
+
+submit_register.addEventListener('click', evt=> controller.register(evt))
+
+exit.addEventListener('click', ()=>controller.exit())
+
+remove.addEventListener('click', evt=> controller.deleteAccount(evt))
+
 radios.forEach(radio=>{
-  radio.addEventListener('focus', ()=>{
-    sexLabel.classList.remove('vazio')
-  })
+  radio.addEventListener('focus', ()=> sexLabel.classList.remove('vazio'))
 })
