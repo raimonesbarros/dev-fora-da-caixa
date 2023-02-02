@@ -64,10 +64,9 @@ Botão sair, para efetuar logoff
 
 <div align="center">
 
-![](img/show/mob1.jpg)
-![](img/show/mob2.jpg)
-![](img/show/mob3.jpg)
-![](img/show/mob4.jpg)
+![](img/show/mob-init.jpg)
+![](img/show/mob-form.jpg)
+![](img/show/mob-login.jpg)
 
 </div>
 
@@ -87,10 +86,9 @@ Botão sair, para efetuar logoff
 
 ----
 
-## ⬆️ Atualizações
+## ⬆️ Implementar
 
-- Permitir edição de dados do usuário;
-- Permitir exclusão total de dados cadastrados.
+- Edição de dados do usuário;
 - Modo escuro, tema: Dark.
 
 ----
