@@ -47,11 +47,13 @@ Link para página de login;
 
 - ### Acesso por login
 
-![](img/show/show.jpg)
+![](img/show/login.jpg)
 
 Acesso aos dados fornecidos após o login;
 
-Botão sair, para efetuar logoff
+Botão sair, para efetuar logoff;
+
+Botão excluir conta.
 
 ----
 
