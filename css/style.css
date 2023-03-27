@@ -241,6 +241,7 @@ input:focus{
   background-color: var(--primaria);
   color           : #fff;
   padding         : .5em;
+  border          : 3px solid var(--primaria);
   border-radius   : 30px;
   box-shadow      : 0 0 5px var(--sombra);
   cursor          : pointer;
