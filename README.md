@@ -1,11 +1,9 @@
 <h1><span><img src="img/Brand/dev-icone.png" width="40"></span>&lt;/dev&gt; fora da caixa</h1>
 
  
-### Projeto de site dinâmico, para fins de prática de conhecimentos e aperfeiçoamento de técnicas.
+### Projeto de site dinâmico, para fins de prática de conhecimentos e aperfeiçoamento de técnicas!
 
 ----
-
-
 ----
 
 ## 🛠️ Recursos:
@@ -101,7 +99,6 @@ Botão excluir conta.
 
 ## 📖 Abordagens
 
-- Criação de API interna;
 - Persistência de dados, localStorage;
 - POO, MVC, convenções, e abordagens de segurança;
 - CRUD;
