@@ -1,6 +1,6 @@
-<h1><span><img src="img/Brand/dev-icone.png" width="40"></span>&lt;/dev&gt; fora da caixa</h1>
+<h1><span><img src="img/Brand/dev-icone.png" width="40"></span>&lt;/dev&gt; fora da caixa :own</h1>
 
- 
+
 ### Projeto de site dinâmico, para fins de prática de conhecimentos e aperfeiçoamento de técnicas!
 
 ----
@@ -23,7 +23,7 @@ Link para cadastro;
 
 Botão chamariz para área de cadastro.
 
-*outros recursos desativados. 
+*outros recursos desativados.
 
 - ### Formulário de cadastro
 
@@ -79,9 +79,9 @@ Botão excluir conta.
 
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
- 
+
  com foco em:
- 
+
  ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 ### Foco de estudo: Javascript Orientado a Objetos. <br> Criação, manipulação, instanciação e visualização de objetos.
@@ -103,6 +103,11 @@ Botão excluir conta.
 - POO, MVC, convenções, e abordagens de segurança;
 - CRUD;
 - JSON: envio, requisição e manipulação;
+
+----
+
+## Legenda
+:own - Projeto próprio
 
 ----
 
